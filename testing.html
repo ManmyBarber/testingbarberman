@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="video-background">
+        <div class="video-overlay"></div>
+    </div>
     <div class="container">
         <div class="header">
             <div class="profile-img"></div>
@@ -80,86 +83,6 @@
                 
                 <a href="tel:+6012XXXXXXX" class="cta-button">📞 Call Now</a>
                 <a href="https://wa.me/6012XXXXXXX" class="cta-button">💬 WhatsApp</a>
-            </div>
-        </div>
-
-        <!-- New Barbershop Directory Section -->
-        <div class="directory-section">
-            <h2>📋 Klang Valley Barbershops Directory</h2>
-            <p class="directory-subtitle">Jejak semua barbershop di Lembah Klang - 156 barbershop tersedia</p>
-            
-            <!-- Search and Filter Controls -->
-            <div class="search-filters">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Cari barbershop..." class="search-input">
-                    <button onclick="searchBarbershops()" class="search-btn">🔍</button>
-                </div>
-                
-                <div class="filter-controls">
-                    <select id="areaFilter" class="filter-select" onchange="filterBarbershops()">
-                        <option value="">Semua Kawasan</option>
-                        <option value="Kuala Lumpur">Kuala Lumpur</option>
-                        <option value="Petaling Jaya">Petaling Jaya</option>
-                        <option value="Shah Alam">Shah Alam</option>
-                        <option value="Subang Jaya">Subang Jaya</option>
-                        <option value="Klang">Klang</option>
-                        <option value="Cheras">Cheras</option>
-                        <option value="Kepong">Kepong</option>
-                        <option value="Wangsa Maju">Wangsa Maju</option>
-                    </select>
-                    
-                    <select id="priceFilter" class="filter-select" onchange="filterBarbershops()">
-                        <option value="">Semua Harga</option>
-                        <option value="0-20">Under RM20</option>
-                        <option value="20-30">RM20-RM30</option>
-                        <option value="30-50">RM30-RM50</option>
-                        <option value="50-80">RM50-RM80</option>
-                        <option value="80+">Above RM80</option>
-                    </select>
-                    
-                    <select id="specialtyFilter" class="filter-select" onchange="filterBarbershops()">
-                        <option value="">Semua Specialties</option>
-                        <option value="Modern Fades">Modern Fades</option>
-                        <option value="Classic Cuts">Classic Cuts</option>
-                        <option value="Traditional">Traditional</option>
-                        <option value="Premium">Premium</option>
-                        <option value="Family">Family</option>
-                        <option value="Business">Business</option>
-                        <option value="Artist Styling">Artist Styling</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Statistics Cards -->
-            <div class="stats-cards">
-                <div class="stat-card">
-                    <h3>156</h3>
-                    <p>Total Barbershops</p>
-                </div>
-                <div class="stat-card">
-                    <h3>4.6</h3>
-                    <p>Average Rating</p>
-                </div>
-                <div class="stat-card">
-                    <h3>RM35</h3>
-                    <p>Average Price</p>
-                </div>
-                <div class="stat-card">
-                    <h3>14</h3>
-                    <p>Areas Covered</p>
-                </div>
-            </div>
-
-            <!-- Barbershops Grid -->
-            <div id="barbershopsGrid" class="barbershops-grid">
-                <!-- Barbershops will be loaded here by JavaScript -->
-            </div>
-
-            <!-- Load More Button -->
-            <div class="load-more-container">
-                <button id="loadMoreBtn" onclick="loadMoreBarbershops()" class="load-more-btn">
-                    Muat Lebih Banyak
-                </button>
             </div>
         </div>
 

@@ -183,7 +183,7 @@ body {
     background: #333333;
 }
 
-/* Video Background Styles */
+/* Image Background Styles */
 .video-background {
     position: fixed;
     top: 0;
@@ -192,18 +192,7 @@ body {
     height: 100%;
     z-index: -1;
     overflow: hidden;
-}
-
-.video-background video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
+    background: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center center/cover no-repeat;
 }
 
 .video-overlay {
@@ -457,8 +446,9 @@ body {
         font-size: 2em;
     }
     
-    .video-background video {
-        object-fit: cover;
+    .video-background {
+        background-size: cover;
+        background-position: center;
     }
     
     .filter-controls {

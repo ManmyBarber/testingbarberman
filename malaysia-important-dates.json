@@ -1,0 +1,44 @@
+{
+  "important_dates": [
+    {
+      "date": "1957-08-31",
+      "event": "Kemerdekaan Tanah Melayu",
+      "description": "Tanah Melayu mencapai kemerdekaan daripada British. Laungan 'Merdeka!' oleh Tunku Abdul Rahman."
+    },
+    {
+      "date": "1963-09-16",
+      "event": "Pembentukan Malaysia",
+      "description": "Sabah, Sarawak, dan Singapura bergabung dengan Tanah Melayu membentuk Malaysia."
+    },
+    {
+      "date": "1965-08-09",
+      "event": "Singapura Keluar Malaysia",
+      "description": "Singapura secara rasmi keluar dari Malaysia dan menjadi negara merdeka."
+    },
+    {
+      "date": "1969-05-13",
+      "event": "Peristiwa 13 Mei",
+      "description": "Rusuhan kaum di Kuala Lumpur selepas Pilihan Raya Umum 1969."
+    },
+    {
+      "date": "1971-01-01",
+      "event": "Dasar Ekonomi Baru (DEB)",
+      "description": "DEB diperkenalkan untuk mengurangkan jurang ekonomi antara kaum."
+    },
+    {
+      "date": "1991-02-28",
+      "event": "Wawasan 2020",
+      "description": "Tun Dr. Mahathir Mohamad melancarkan Wawasan 2020 untuk menjadikan Malaysia negara maju."
+    },
+    {
+      "date": "1998-09-02",
+      "event": "Permulaan Reformasi",
+      "description": "Pemecatan Datuk Seri Anwar Ibrahim dan bermulanya gerakan Reformasi."
+    },
+    {
+      "date": "2020-03-18",
+      "event": "PKP COVID-19 Bermula",
+      "description": "Perintah Kawalan Pergerakan (PKP) pertama dilaksanakan akibat pandemik COVID-19."
+    }
+  ]
+} 

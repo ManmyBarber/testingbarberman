@@ -441,6 +441,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // --- Important Dates logic ---
+    fetchAndRenderImportantDates();
 });
 
 // Add CSS for ripple effect
@@ -887,4 +889,32 @@ function getHardcodedBarbershops() {
             ]
         }
     ];
+}
+
+async function fetchAndRenderImportantDates() {
+  const { data, error } = await supabase
+    .from('important_dates')
+    .select('*')
+    .order('date', { ascending: true });
+  renderImportantDates(data, error);
+}
+
+function renderImportantDates(dates, error) {
+  const list = document.getElementById('importantDatesList');
+  if (!list) return;
+  if (error) {
+    list.innerHTML = '<li>Gagal ambil data.</li>';
+    return;
+  }
+  if (!dates || dates.length === 0) {
+    list.innerHTML = '<li>Tiada data.</li>';
+    return;
+  }
+  list.innerHTML = dates.map(d =>
+    `<li>
+      <span class="important-date-date">${d.date}</span>
+      <span class="important-date-title">${d.event}</span>
+      <div>${d.description}</div>
+    </li>`
+  ).join('');
 } 

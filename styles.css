@@ -750,4 +750,36 @@ main {
   padding: 8px;
   border-radius: 6px;
   border: 1px solid #ccc;
+}
+
+.important-dates-section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 30px 20px 20px 20px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.important-dates-list {
+  list-style: none;
+  padding: 0;
+}
+.important-dates-list li {
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e6ef;
+}
+.important-dates-list li:last-child {
+  border-bottom: none;
+}
+.important-date-title {
+  font-weight: bold;
+  color: #002147;
+}
+.important-date-date {
+  color: #0074d9;
+  font-size: 0.98em;
+  margin-right: 8px;
 } 

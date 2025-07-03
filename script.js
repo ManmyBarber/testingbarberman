@@ -1,5 +1,65 @@
+// --- Supabase Integration ---
+// If using the CDN, make sure this is in your HTML:
+// <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+const supabaseUrl = 'https://jdlkuyyomnufmuseadee.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpkbGt1eXlvbW51Zm11c2VhZGVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE0MjYwNjgsImV4cCI6MjA2NzAwMjA2OH0.mD8lgkipJPmR7XIGeqsI0E98qUzYOXGKpaDaPQe2Dns';
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+// Fetch barbershops from Supabase and render
+async function fetchAndRenderBarbershops() {
+  const { data, error } = await supabase
+    .from('barbershops')
+    .select('*');
+  if (error) {
+    console.error('Supabase fetch error:', error);
+    return;
+  }
+  renderBarbershops(data);
+}
+
+// Render barbershops to the grid
+function renderBarbershops(barbershops) {
+  const grid = document.getElementById('barbershopsGrid');
+  grid.innerHTML = '';
+  if (!barbershops || barbershops.length === 0) {
+    grid.innerHTML = '<div style="text-align:center;color:#888;">Tiada barbershop dijumpai.</div>';
+    return;
+  }
+  barbershops.forEach(barbershop => {
+    const card = document.createElement('div');
+    card.className = 'barbershop-card';
+    card.innerHTML = `
+      <div class="barbershop-header">
+        <div>
+          <div class="barbershop-name">${barbershop.name}</div>
+          <div class="barbershop-specialty">${barbershop.specialty || ''}</div>
+        </div>
+        <div class="barbershop-rating">⭐ ${barbershop.rating || '-'}</div>
+      </div>
+      <div class="barbershop-location">
+        📍 ${barbershop.location?.area || ''}, ${barbershop.location?.district || ''}
+      </div>
+      <div class="barbershop-services">
+        ${(barbershop.services || []).map(service => `
+          <div class="service-item">
+            <span>${service.name}</span>
+            <span class="service-price">RM ${service.price}</span>
+          </div>
+        `).join('')}
+      </div>
+      <div class="barbershop-contact">
+        <a href="tel:${barbershop.contact?.phone || ''}" class="contact-btn">📞 Call</a>
+        <a href="https://wa.me/${(barbershop.contact?.whatsapp || '').replace(/\\D/g, '')}" class="contact-btn">💬 WhatsApp</a>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    fetchAndRenderBarbershops();
     
     // Create video background
     createVideoBackground();

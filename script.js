@@ -344,6 +344,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load barbershops directory
     loadBarbershopsDirectory();
 
+    // Inquiry form logic
+    const inquiryForm = document.getElementById('inquiryForm');
+    if (inquiryForm) {
+        inquiryForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const name = document.getElementById('inquiryName').value.trim();
+            const email = document.getElementById('inquiryEmail').value.trim();
+            const message = document.getElementById('inquiryMessage').value.trim();
+            const statusDiv = document.getElementById('inquiryStatus');
+            statusDiv.textContent = '';
+            if (!name || !email || !message) {
+                statusDiv.textContent = 'Please fill in all fields.';
+                statusDiv.style.color = 'red';
+                return;
+            }
+            // Save to Supabase
+            const { error } = await supabase
+                .from('inquiries')
+                .insert([{ name, email, message }]);
+            if (error) {
+                statusDiv.textContent = 'Failed to send inquiry. Please try again.';
+                statusDiv.style.color = 'red';
+            } else {
+                statusDiv.textContent = 'Inquiry sent! Thank you.';
+                statusDiv.style.color = 'green';
+                inquiryForm.reset();
+            }
+        });
+    }
+
 });
 
 // Add CSS for ripple effect

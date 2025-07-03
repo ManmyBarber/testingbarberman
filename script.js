@@ -407,6 +407,40 @@ document.addEventListener('DOMContentLoaded', function() {
         viewBtn.addEventListener('click', fetchAndRenderInquiries);
     }
 
+    // Chatbox logic
+    const chatForm = document.getElementById('chatForm');
+    const chatInput = document.getElementById('chatInput');
+    const chatMessages = document.getElementById('chatMessages');
+
+    if (chatForm && chatInput && chatMessages) {
+        chatForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const userMsg = chatInput.value.trim();
+            if (!userMsg) return;
+            appendMessage('user', userMsg);
+            chatInput.value = '';
+            chatInput.disabled = true;
+
+            // Call Netlify Function (or your backend endpoint)
+            const res = await fetch('/.netlify/functions/chatbot', {
+                method: 'POST',
+                body: JSON.stringify({ message: userMsg })
+            });
+            const data = await res.json();
+            appendMessage('ai', data.reply);
+            chatInput.disabled = false;
+            chatInput.focus();
+        });
+
+        function appendMessage(role, text) {
+            const div = document.createElement('div');
+            div.className = 'chat-message ' + role;
+            div.textContent = text;
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    }
+
 });
 
 // Add CSS for ripple effect

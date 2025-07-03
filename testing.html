@@ -86,6 +86,80 @@
             </div>
         </div>
 
+        <!-- Klang Valley Barbershops Directory Section -->
+        <div class="directory-section">
+            <h2>📋 Klang Valley Barbershops Directory</h2>
+            <p class="directory-subtitle">Jelajahi barbershops terbaik di sekitar Klang Valley</p>
+            
+            <!-- Search and Filter Controls -->
+            <div class="search-filters">
+                <div class="search-box">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Cari barbershop...">
+                    <button id="searchBtn" class="search-btn">🔍</button>
+                </div>
+                
+                <div class="filter-controls">
+                    <select id="areaFilter" class="filter-select">
+                        <option value="">Semua Kawasan</option>
+                        <option value="Kuala Lumpur">Kuala Lumpur</option>
+                        <option value="Petaling Jaya">Petaling Jaya</option>
+                        <option value="Shah Alam">Shah Alam</option>
+                        <option value="Subang Jaya">Subang Jaya</option>
+                        <option value="Klang">Klang</option>
+                    </select>
+                    
+                    <select id="priceFilter" class="filter-select">
+                        <option value="">Semua Harga</option>
+                        <option value="Under RM20">Bawah RM20</option>
+                        <option value="RM20-RM30">RM20-RM30</option>
+                        <option value="RM30-RM50">RM30-RM50</option>
+                        <option value="RM50-RM80">RM50-RM80</option>
+                        <option value="Above RM80">Atas RM80</option>
+                    </select>
+                    
+                    <select id="specialtyFilter" class="filter-select">
+                        <option value="">Semua Khasiat</option>
+                        <option value="Modern Fades">Modern Fades</option>
+                        <option value="Classic Cuts">Classic Cuts</option>
+                        <option value="Traditional">Traditional</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Family">Family</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <h3 id="totalShops">156</h3>
+                    <p>Total Barbershops</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="avgRating">4.6</h3>
+                    <p>Purata Rating</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="avgPrice">RM35</h3>
+                    <p>Purata Harga</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="topArea">KL</h3>
+                    <p>Kawasan Teratas</p>
+                </div>
+            </div>
+
+            <!-- Barbershops Grid -->
+            <div id="barbershopsGrid" class="barbershops-grid">
+                <!-- Barbershop cards will be loaded here -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="loadMoreBtn" class="load-more-btn">Tunjukkan Lagi</button>
+            </div>
+        </div>
+
         <div class="footer">
             <h3>Mengapa Pilih Man Barber?</h3>
             <p style="margin: 15px 0; color: #7f8c8d;">

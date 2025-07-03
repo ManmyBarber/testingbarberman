@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create video background
     createVideoBackground();
     
+    // Load barbershops directory
+    loadBarbershopsDirectory();
+    
     // Add smooth scrolling for anchor links
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
@@ -363,13 +366,21 @@ async function loadBarbershopsDirectory() {
         const data = await response.json();
         allBarbershops = data.barbershops;
         filteredBarbershops = [...allBarbershops];
+        
+        // Store statistics data
+        window.statisticsData = data.statistics;
+        
         displayBarbershops();
+        updateStatistics();
+        addDirectoryEventListeners();
     } catch (error) {
         console.error('Error loading barbershops:', error);
         // Fallback: Use hardcoded data
         allBarbershops = getHardcodedBarbershops();
         filteredBarbershops = [...allBarbershops];
         displayBarbershops();
+        updateStatistics();
+        addDirectoryEventListeners();
     }
 }
 
@@ -502,6 +513,58 @@ function filterBarbershops() {
 function loadMoreBarbershops() {
     currentPage++;
     displayBarbershops();
+}
+
+// Update statistics display
+function updateStatistics() {
+    if (window.statisticsData) {
+        document.getElementById('totalShops').textContent = window.statisticsData.totalBarbershops;
+        document.getElementById('avgRating').textContent = window.statisticsData.averageRating;
+        document.getElementById('avgPrice').textContent = `RM${window.statisticsData.priceRange.average}`;
+        
+        // Find top area
+        const areas = window.statisticsData.areas;
+        const topArea = Object.keys(areas).reduce((a, b) => areas[a] > areas[b] ? a : b);
+        document.getElementById('topArea').textContent = topArea === 'Kuala Lumpur' ? 'KL' : topArea;
+    }
+}
+
+// Add event listeners for directory functionality
+function addDirectoryEventListeners() {
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    
+    if (searchInput) {
+        searchInput.addEventListener('input', searchBarbershops);
+    }
+    
+    if (searchBtn) {
+        searchBtn.addEventListener('click', searchBarbershops);
+    }
+    
+    // Filter functionality
+    const areaFilter = document.getElementById('areaFilter');
+    const priceFilter = document.getElementById('priceFilter');
+    const specialtyFilter = document.getElementById('specialtyFilter');
+    
+    if (areaFilter) {
+        areaFilter.addEventListener('change', filterBarbershops);
+    }
+    
+    if (priceFilter) {
+        priceFilter.addEventListener('change', filterBarbershops);
+    }
+    
+    if (specialtyFilter) {
+        specialtyFilter.addEventListener('change', filterBarbershops);
+    }
+    
+    // Load more functionality
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', loadMoreBarbershops);
+    }
 }
 
 // Hardcoded barbershops data (fallback)

@@ -85,6 +85,34 @@ function renderRatingsTable(ratings) {
   });
 }
 
+// Fetch and render inquiries from Supabase
+async function fetchAndRenderInquiries() {
+  const { data, error } = await supabase
+    .from('inquiries')
+    .select('*')
+    .order('created_at', { ascending: false });
+  if (error) {
+    alert('Failed to fetch inquiries.');
+    return;
+  }
+  renderInquiriesList(data);
+}
+
+function renderInquiriesList(inquiries) {
+  const listDiv = document.getElementById('inquiriesList');
+  if (!listDiv) return;
+  if (!inquiries || inquiries.length === 0) {
+    listDiv.innerHTML = '<div style="text-align:center;color:#888;">No inquiries yet.</div>';
+    return;
+  }
+  listDiv.innerHTML = inquiries.map(inq => `
+    <div class="inquiry-item">
+      <div class="inquiry-meta">${inq.name} &lt;${inq.email}&gt; • ${new Date(inq.created_at).toLocaleString()}</div>
+      <div class="inquiry-message">${inq.message}</div>
+    </div>
+  `).join('');
+}
+
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     fetchAndRenderBarbershops();
@@ -372,6 +400,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 inquiryForm.reset();
             }
         });
+    }
+
+    const viewBtn = document.getElementById('viewInquiriesBtn');
+    if (viewBtn) {
+        viewBtn.addEventListener('click', fetchAndRenderInquiries);
     }
 
 });

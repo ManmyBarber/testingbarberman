@@ -57,9 +57,38 @@ function renderBarbershops(barbershops) {
   });
 }
 
+// Fetch and render ratings from Supabase
+async function fetchAndRenderRatings() {
+  const { data, error } = await supabase
+    .from('ratings')
+    .select('*')
+    .order('rating', { ascending: false });
+  if (error) {
+    console.error('Supabase ratings fetch error:', error);
+    return;
+  }
+  renderRatingsTable(data);
+}
+
+function renderRatingsTable(ratings) {
+  const tableBody = document.querySelector('#ratingsTable tbody');
+  if (!tableBody) return;
+  tableBody.innerHTML = '';
+  if (!ratings || ratings.length === 0) {
+    tableBody.innerHTML = '<tr><td colspan="2" style="text-align:center;color:#888;">No ratings data.</td></tr>';
+    return;
+  }
+  ratings.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${row.rating}</td><td>${row.number_of_people}</td>`;
+    tableBody.appendChild(tr);
+  });
+}
+
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     fetchAndRenderBarbershops();
+    fetchAndRenderRatings();
     
     // Create video background
     createVideoBackground();

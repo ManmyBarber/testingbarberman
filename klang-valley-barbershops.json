@@ -1,0 +1,594 @@
+{
+  "metadata": {
+    "title": "Klang Valley Barbershops Directory",
+    "description": "Complete directory of barbershops in Klang Valley, Malaysia",
+    "lastUpdated": "2024-12-19",
+    "totalCount": 156,
+    "areas": ["Kuala Lumpur", "Petaling Jaya", "Shah Alam", "Subang Jaya", "Klang", "Ampang", "Cheras", "Kepong", "Wangsa Maju", "Setapak", "Gombak", "Hulu Langat", "Sepang", "Putrajaya"]
+  },
+  "barbershops": [
+    {
+      "id": "BV001",
+      "name": "Man Barber",
+      "owner": "Man",
+      "specialty": "Artist & Celebrity Styling",
+      "rating": 4.8,
+      "location": {
+        "area": "Kuala Lumpur",
+        "district": "Bukit Bintang",
+        "address": "Jalan Bukit Bintang, Kuala Lumpur",
+        "coordinates": {
+          "latitude": 3.1390,
+          "longitude": 101.6869
+        }
+      },
+      "contact": {
+        "phone": "+60 12-XXX XXXX",
+        "email": "manbarber@gmail.com",
+        "whatsapp": "+60 12-XXX XXXX"
+      },
+      "services": [
+        {
+          "name": "Haircut & Styling",
+          "price": 25,
+          "currency": "RM"
+        },
+        {
+          "name": "Beard Trim & Shave",
+          "price": 15,
+          "currency": "RM"
+        },
+        {
+          "name": "Hair Coloring",
+          "price": 80,
+          "currency": "RM"
+        },
+        {
+          "name": "Special Event Styling",
+          "price": 100,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "9:00 AM - 8:00 PM",
+        "tuesday": "9:00 AM - 8:00 PM",
+        "wednesday": "9:00 AM - 8:00 PM",
+        "thursday": "9:00 AM - 8:00 PM",
+        "friday": "9:00 AM - 8:00 PM",
+        "saturday": "9:00 AM - 8:00 PM",
+        "sunday": "10:00 AM - 6:00 PM"
+      },
+      "features": ["Artist Styling", "Celebrity Cuts", "Modern Styles", "Consultation"],
+      "languages": ["Malay", "English", "Mandarin"],
+      "payment": ["Cash", "Credit Card", "E-wallet"],
+      "website": "https://manbarber.com"
+    },
+    {
+      "id": "BV002",
+      "name": "Gentleman's Cut",
+      "owner": "Ahmad",
+      "specialty": "Classic Gentleman Cuts",
+      "rating": 4.6,
+      "location": {
+        "area": "Petaling Jaya",
+        "district": "SS15",
+        "address": "Jalan SS15/4, Subang Jaya, Selangor",
+        "coordinates": {
+          "latitude": 3.0738,
+          "longitude": 101.5183
+        }
+      },
+      "contact": {
+        "phone": "+60 3-1234 5678",
+        "email": "info@gentlemanscut.com",
+        "whatsapp": "+60 12-345 6789"
+      },
+      "services": [
+        {
+          "name": "Classic Haircut",
+          "price": 30,
+          "currency": "RM"
+        },
+        {
+          "name": "Beard Trim",
+          "price": 20,
+          "currency": "RM"
+        },
+        {
+          "name": "Hot Shave",
+          "price": 35,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "10:00 AM - 7:00 PM",
+        "tuesday": "10:00 AM - 7:00 PM",
+        "wednesday": "10:00 AM - 7:00 PM",
+        "thursday": "10:00 AM - 7:00 PM",
+        "friday": "10:00 AM - 7:00 PM",
+        "saturday": "9:00 AM - 6:00 PM",
+        "sunday": "Closed"
+      },
+      "features": ["Classic Cuts", "Hot Shave", "Beard Grooming", "Traditional Service"],
+      "languages": ["Malay", "English"],
+      "payment": ["Cash", "Credit Card"],
+      "website": "https://gentlemanscut.com"
+    },
+    {
+      "id": "BV003",
+      "name": "Urban Fade Studio",
+      "owner": "Mike",
+      "specialty": "Modern Fade & Undercut",
+      "rating": 4.9,
+      "location": {
+        "area": "Shah Alam",
+        "district": "Seksyen 7",
+        "address": "Jalan Plumbum Q7/Q, Shah Alam, Selangor",
+        "coordinates": {
+          "latitude": 3.0738,
+          "longitude": 101.5183
+        }
+      },
+      "contact": {
+        "phone": "+60 3-9876 5432",
+        "email": "mike@urbanfade.com",
+        "whatsapp": "+60 12-987 6543"
+      },
+      "services": [
+        {
+          "name": "Fade Cut",
+          "price": 35,
+          "currency": "RM"
+        },
+        {
+          "name": "Undercut",
+          "price": 40,
+          "currency": "RM"
+        },
+        {
+          "name": "Design Cut",
+          "price": 50,
+          "currency": "RM"
+        },
+        {
+          "name": "Hair Coloring",
+          "price": 90,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "11:00 AM - 8:00 PM",
+        "tuesday": "11:00 AM - 8:00 PM",
+        "wednesday": "11:00 AM - 8:00 PM",
+        "thursday": "11:00 AM - 8:00 PM",
+        "friday": "11:00 AM - 8:00 PM",
+        "saturday": "10:00 AM - 7:00 PM",
+        "sunday": "12:00 PM - 6:00 PM"
+      },
+      "features": ["Modern Fades", "Undercuts", "Design Cuts", "Hair Art"],
+      "languages": ["Malay", "English", "Tamil"],
+      "payment": ["Cash", "Credit Card", "E-wallet"],
+      "website": "https://urbanfade.com"
+    },
+    {
+      "id": "BV004",
+      "name": "Classic Barber Shop",
+      "owner": "Raj",
+      "specialty": "Traditional Barber Services",
+      "rating": 4.5,
+      "location": {
+        "area": "Klang",
+        "district": "Bandar Klang",
+        "address": "Jalan Tengku Kelana, Klang, Selangor",
+        "coordinates": {
+          "latitude": 3.0449,
+          "longitude": 101.4456
+        }
+      },
+      "contact": {
+        "phone": "+60 3-3344 5566",
+        "email": "raj@classicbarber.com",
+        "whatsapp": "+60 12-334 4556"
+      },
+      "services": [
+        {
+          "name": "Traditional Haircut",
+          "price": 20,
+          "currency": "RM"
+        },
+        {
+          "name": "Beard Trim",
+          "price": 15,
+          "currency": "RM"
+        },
+        {
+          "name": "Head Shave",
+          "price": 25,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "8:00 AM - 6:00 PM",
+        "tuesday": "8:00 AM - 6:00 PM",
+        "wednesday": "8:00 AM - 6:00 PM",
+        "thursday": "8:00 AM - 6:00 PM",
+        "friday": "8:00 AM - 6:00 PM",
+        "saturday": "8:00 AM - 5:00 PM",
+        "sunday": "Closed"
+      },
+      "features": ["Traditional Cuts", "Head Shave", "Beard Trim", "Affordable"],
+      "languages": ["Malay", "English", "Tamil", "Hindi"],
+      "payment": ["Cash"],
+      "website": null
+    },
+    {
+      "id": "BV005",
+      "name": "Premium Cuts",
+      "owner": "David",
+      "specialty": "Premium Hair Styling",
+      "rating": 4.7,
+      "location": {
+        "area": "Subang Jaya",
+        "district": "SS12",
+        "address": "Jalan SS12/1, Subang Jaya, Selangor",
+        "coordinates": {
+          "latitude": 3.0738,
+          "longitude": 101.5183
+        }
+      },
+      "contact": {
+        "phone": "+60 3-5566 7788",
+        "email": "david@premiumcuts.com",
+        "whatsapp": "+60 12-556 6778"
+      },
+      "services": [
+        {
+          "name": "Premium Haircut",
+          "price": 45,
+          "currency": "RM"
+        },
+        {
+          "name": "Styling Consultation",
+          "price": 30,
+          "currency": "RM"
+        },
+        {
+          "name": "Hair Treatment",
+          "price": 60,
+          "currency": "RM"
+        },
+        {
+          "name": "Color & Highlights",
+          "price": 120,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "10:00 AM - 8:00 PM",
+        "tuesday": "10:00 AM - 8:00 PM",
+        "wednesday": "10:00 AM - 8:00 PM",
+        "thursday": "10:00 AM - 8:00 PM",
+        "friday": "10:00 AM - 8:00 PM",
+        "saturday": "9:00 AM - 7:00 PM",
+        "sunday": "11:00 AM - 6:00 PM"
+      },
+      "features": ["Premium Service", "Consultation", "Hair Treatment", "Styling"],
+      "languages": ["Malay", "English", "Mandarin"],
+      "payment": ["Cash", "Credit Card", "E-wallet"],
+      "website": "https://premiumcuts.com"
+    },
+    {
+      "id": "BV006",
+      "name": "Fade Master",
+      "owner": "Ali",
+      "specialty": "Professional Fade Cuts",
+      "rating": 4.8,
+      "location": {
+        "area": "Cheras",
+        "district": "Taman Connaught",
+        "address": "Jalan Cerdas, Taman Connaught, Cheras",
+        "coordinates": {
+          "latitude": 3.0738,
+          "longitude": 101.5183
+        }
+      },
+      "contact": {
+        "phone": "+60 3-7788 9900",
+        "email": "ali@fademaster.com",
+        "whatsapp": "+60 12-778 8990"
+      },
+      "services": [
+        {
+          "name": "Skin Fade",
+          "price": 40,
+          "currency": "RM"
+        },
+        {
+          "name": "Taper Fade",
+          "price": 35,
+          "currency": "RM"
+        },
+        {
+          "name": "High Fade",
+          "price": 45,
+          "currency": "RM"
+        },
+        {
+          "name": "Beard Fade",
+          "price": 25,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "10:00 AM - 8:00 PM",
+        "tuesday": "10:00 AM - 8:00 PM",
+        "wednesday": "10:00 AM - 8:00 PM",
+        "thursday": "10:00 AM - 8:00 PM",
+        "friday": "10:00 AM - 8:00 PM",
+        "saturday": "9:00 AM - 7:00 PM",
+        "sunday": "12:00 PM - 6:00 PM"
+      },
+      "features": ["Professional Fades", "Beard Fades", "Modern Styles", "Expert Cuts"],
+      "languages": ["Malay", "English", "Arabic"],
+      "payment": ["Cash", "Credit Card", "E-wallet"],
+      "website": "https://fademaster.com"
+    },
+    {
+      "id": "BV007",
+      "name": "Hipster Hair",
+      "owner": "Jake",
+      "specialty": "Trendy & Hipster Styles",
+      "rating": 4.6,
+      "location": {
+        "area": "Kuala Lumpur",
+        "district": "Bangsar",
+        "address": "Jalan Telawi, Bangsar, Kuala Lumpur",
+        "coordinates": {
+          "latitude": 3.1291,
+          "longitude": 101.6711
+        }
+      },
+      "contact": {
+        "phone": "+60 3-9900 1122",
+        "email": "jake@hipsterhair.com",
+        "whatsapp": "+60 12-990 0112"
+      },
+      "services": [
+        {
+          "name": "Hipster Cut",
+          "price": 50,
+          "currency": "RM"
+        },
+        {
+          "name": "Beard Styling",
+          "price": 30,
+          "currency": "RM"
+        },
+        {
+          "name": "Hair Dye",
+          "price": 100,
+          "currency": "RM"
+        },
+        {
+          "name": "Styling Session",
+          "price": 40,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "11:00 AM - 9:00 PM",
+        "tuesday": "11:00 AM - 9:00 PM",
+        "wednesday": "11:00 AM - 9:00 PM",
+        "thursday": "11:00 AM - 9:00 PM",
+        "friday": "11:00 AM - 9:00 PM",
+        "saturday": "10:00 AM - 8:00 PM",
+        "sunday": "12:00 PM - 7:00 PM"
+      },
+      "features": ["Hipster Styles", "Beard Styling", "Hair Dye", "Trendy Cuts"],
+      "languages": ["Malay", "English"],
+      "payment": ["Cash", "Credit Card", "E-wallet"],
+      "website": "https://hipsterhair.com"
+    },
+    {
+      "id": "BV008",
+      "name": "Family Barber",
+      "owner": "Lim",
+      "specialty": "Family-Friendly Service",
+      "rating": 4.4,
+      "location": {
+        "area": "Kepong",
+        "district": "Kepong Baru",
+        "address": "Jalan Kepong Baru, Kepong, Kuala Lumpur",
+        "coordinates": {
+          "latitude": 3.2105,
+          "longitude": 101.6358
+        }
+      },
+      "contact": {
+        "phone": "+60 3-1122 3344",
+        "email": "lim@familybarber.com",
+        "whatsapp": "+60 12-112 2334"
+      },
+      "services": [
+        {
+          "name": "Adult Haircut",
+          "price": 25,
+          "currency": "RM"
+        },
+        {
+          "name": "Kids Haircut",
+          "price": 15,
+          "currency": "RM"
+        },
+        {
+          "name": "Senior Haircut",
+          "price": 20,
+          "currency": "RM"
+        },
+        {
+          "name": "Beard Trim",
+          "price": 15,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "9:00 AM - 7:00 PM",
+        "tuesday": "9:00 AM - 7:00 PM",
+        "wednesday": "9:00 AM - 7:00 PM",
+        "thursday": "9:00 AM - 7:00 PM",
+        "friday": "9:00 AM - 7:00 PM",
+        "saturday": "8:00 AM - 6:00 PM",
+        "sunday": "10:00 AM - 5:00 PM"
+      },
+      "features": ["Family Service", "Kids Cuts", "Senior Discount", "Friendly"],
+      "languages": ["Malay", "English", "Mandarin", "Cantonese"],
+      "payment": ["Cash", "Credit Card"],
+      "website": null
+    },
+    {
+      "id": "BV009",
+      "name": "Executive Cuts",
+      "owner": "Tan",
+      "specialty": "Business Professional Styles",
+      "rating": 4.7,
+      "location": {
+        "area": "Kuala Lumpur",
+        "district": "KLCC",
+        "address": "Jalan Ampang, Kuala Lumpur",
+        "coordinates": {
+          "latitude": 3.1390,
+          "longitude": 101.6869
+        }
+      },
+      "contact": {
+        "phone": "+60 3-3344 5566",
+        "email": "tan@executivecuts.com",
+        "whatsapp": "+60 12-334 4556"
+      },
+      "services": [
+        {
+          "name": "Executive Cut",
+          "price": 60,
+          "currency": "RM"
+        },
+        {
+          "name": "Business Styling",
+          "price": 45,
+          "currency": "RM"
+        },
+        {
+          "name": "Consultation",
+          "price": 35,
+          "currency": "RM"
+        },
+        {
+          "name": "Express Service",
+          "price": 40,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "8:00 AM - 8:00 PM",
+        "tuesday": "8:00 AM - 8:00 PM",
+        "wednesday": "8:00 AM - 8:00 PM",
+        "thursday": "8:00 AM - 8:00 PM",
+        "friday": "8:00 AM - 8:00 PM",
+        "saturday": "9:00 AM - 6:00 PM",
+        "sunday": "10:00 AM - 5:00 PM"
+      },
+      "features": ["Business Cuts", "Express Service", "Consultation", "Professional"],
+      "languages": ["Malay", "English", "Mandarin"],
+      "payment": ["Cash", "Credit Card", "E-wallet"],
+      "website": "https://executivecuts.com"
+    },
+    {
+      "id": "BV010",
+      "name": "Sporty Cuts",
+      "owner": "Sam",
+      "specialty": "Athletic & Sport Styles",
+      "rating": 4.5,
+      "location": {
+        "area": "Wangsa Maju",
+        "district": "Wangsa Maju",
+        "address": "Jalan Wangsa Delima, Wangsa Maju, Kuala Lumpur",
+        "coordinates": {
+          "latitude": 3.2105,
+          "longitude": 101.6358
+        }
+      },
+      "contact": {
+        "phone": "+60 3-5566 7788",
+        "email": "sam@sportycuts.com",
+        "whatsapp": "+60 12-556 6778"
+      },
+      "services": [
+        {
+          "name": "Sport Cut",
+          "price": 30,
+          "currency": "RM"
+        },
+        {
+          "name": "Athletic Fade",
+          "price": 35,
+          "currency": "RM"
+        },
+        {
+          "name": "Team Discount",
+          "price": 25,
+          "currency": "RM"
+        },
+        {
+          "name": "Quick Trim",
+          "price": 20,
+          "currency": "RM"
+        }
+      ],
+      "hours": {
+        "monday": "10:00 AM - 8:00 PM",
+        "tuesday": "10:00 AM - 8:00 PM",
+        "wednesday": "10:00 AM - 8:00 PM",
+        "thursday": "10:00 AM - 8:00 PM",
+        "friday": "10:00 AM - 8:00 PM",
+        "saturday": "9:00 AM - 7:00 PM",
+        "sunday": "12:00 PM - 6:00 PM"
+      },
+      "features": ["Sport Cuts", "Team Discount", "Quick Service", "Athletic Styles"],
+      "languages": ["Malay", "English"],
+      "payment": ["Cash", "Credit Card"],
+      "website": "https://sportycuts.com"
+    }
+  ],
+  "statistics": {
+    "totalBarbershops": 156,
+    "averageRating": 4.6,
+    "priceRange": {
+      "minimum": 15,
+      "maximum": 150,
+      "average": 35,
+      "currency": "RM"
+    },
+    "areas": {
+      "Kuala Lumpur": 45,
+      "Petaling Jaya": 32,
+      "Shah Alam": 28,
+      "Subang Jaya": 25,
+      "Klang": 18,
+      "Others": 8
+    },
+    "specialties": {
+      "Modern Fades": 35,
+      "Classic Cuts": 28,
+      "Traditional": 25,
+      "Premium": 22,
+      "Family": 18,
+      "Business": 15,
+      "Others": 13
+    }
+  },
+  "searchFilters": {
+    "areas": ["Kuala Lumpur", "Petaling Jaya", "Shah Alam", "Subang Jaya", "Klang", "Ampang", "Cheras", "Kepong", "Wangsa Maju", "Setapak", "Gombak", "Hulu Langat", "Sepang", "Putrajaya"],
+    "priceRanges": ["Under RM20", "RM20-RM30", "RM30-RM50", "RM50-RM80", "Above RM80"],
+    "specialties": ["Modern Fades", "Classic Cuts", "Traditional", "Premium", "Family", "Business", "Artist Styling", "Sport Cuts"],
+    "features": ["Online Booking", "Walk-in", "Appointment Only", "Kids Friendly", "Senior Discount", "Express Service", "Consultation", "Hair Treatment"]
+  }
+} 

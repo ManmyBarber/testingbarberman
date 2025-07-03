@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man Barber - Professional Hair Stylist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-img"></div>
+            <h1 class="name">Man</h1>
+            <p class="title">Professional Barber & Hair Stylist</p>
+            <p class="tagline">"Connecting with artists through exceptional hair styling"</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Perkhidmatan</h2>
+                <ul class="services">
+                    <li>
+                        <span>Haircut & Styling</span>
+                        <span class="price">RM 25</span>
+                    </li>
+                    <li>
+                        <span>Beard Trim & Shave</span>
+                        <span class="price">RM 15</span>
+                    </li>
+                    <li>
+                        <span>Hair Coloring</span>
+                        <span class="price">RM 80</span>
+                    </li>
+                    <li>
+                        <span>Hair Treatment</span>
+                        <span class="price">RM 50</span>
+                    </li>
+                    <li>
+                        <span>Kids Haircut</span>
+                        <span class="price">RM 15</span>
+                    </li>
+                    <li>
+                        <span>Special Event Styling</span>
+                        <span class="price">RM 100+</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Kemahiran Khas</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 10px 0; border-bottom: 1px solid #ecf0f1;">✓ Fade & Undercut Styles</li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid #ecf0f1;">✓ Modern & Classic Cuts</li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid #ecf0f1;">✓ Artist & Celebrity Styling</li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid #ecf0f1;">✓ Hair Coloring & Highlights</li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid #ecf0f1;">✓ Beard Grooming</li>
+                    <li style="padding: 10px 0;">✓ Consultation & Advice</li>
+                </ul>
+            </div>
+
+            <div class="section contact-info">
+                <h2>Hubungi Saya</h2>
+                <div class="contact-item">
+                    <strong>📞 Phone:</strong><br>
+                    +60 12-XXX XXXX
+                </div>
+                <div class="contact-item">
+                    <strong>📧 Email:</strong><br>
+                    manbarber@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>📍 Location:</strong><br>
+                    Kuala Lumpur, Malaysia
+                </div>
+                <div class="contact-item">
+                    <strong>⏰ Operating Hours:</strong><br>
+                    Mon-Sat: 9:00 AM - 8:00 PM<br>
+                    Sunday: 10:00 AM - 6:00 PM
+                </div>
+                
+                <a href="tel:+6012XXXXXXX" class="cta-button">📞 Call Now</a>
+                <a href="https://wa.me/6012XXXXXXX" class="cta-button">💬 WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- New Barbershop Directory Section -->
+        <div class="directory-section">
+            <h2>📋 Klang Valley Barbershops Directory</h2>
+            <p class="directory-subtitle">Jejak semua barbershop di Lembah Klang - 156 barbershop tersedia</p>
+            
+            <!-- Search and Filter Controls -->
+            <div class="search-filters">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Cari barbershop..." class="search-input">
+                    <button onclick="searchBarbershops()" class="search-btn">🔍</button>
+                </div>
+                
+                <div class="filter-controls">
+                    <select id="areaFilter" class="filter-select" onchange="filterBarbershops()">
+                        <option value="">Semua Kawasan</option>
+                        <option value="Kuala Lumpur">Kuala Lumpur</option>
+                        <option value="Petaling Jaya">Petaling Jaya</option>
+                        <option value="Shah Alam">Shah Alam</option>
+                        <option value="Subang Jaya">Subang Jaya</option>
+                        <option value="Klang">Klang</option>
+                        <option value="Cheras">Cheras</option>
+                        <option value="Kepong">Kepong</option>
+                        <option value="Wangsa Maju">Wangsa Maju</option>
+                    </select>
+                    
+                    <select id="priceFilter" class="filter-select" onchange="filterBarbershops()">
+                        <option value="">Semua Harga</option>
+                        <option value="0-20">Under RM20</option>
+                        <option value="20-30">RM20-RM30</option>
+                        <option value="30-50">RM30-RM50</option>
+                        <option value="50-80">RM50-RM80</option>
+                        <option value="80+">Above RM80</option>
+                    </select>
+                    
+                    <select id="specialtyFilter" class="filter-select" onchange="filterBarbershops()">
+                        <option value="">Semua Specialties</option>
+                        <option value="Modern Fades">Modern Fades</option>
+                        <option value="Classic Cuts">Classic Cuts</option>
+                        <option value="Traditional">Traditional</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Family">Family</option>
+                        <option value="Business">Business</option>
+                        <option value="Artist Styling">Artist Styling</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <h3>156</h3>
+                    <p>Total Barbershops</p>
+                </div>
+                <div class="stat-card">
+                    <h3>4.6</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-card">
+                    <h3>RM35</h3>
+                    <p>Average Price</p>
+                </div>
+                <div class="stat-card">
+                    <h3>14</h3>
+                    <p>Areas Covered</p>
+                </div>
+            </div>
+
+            <!-- Barbershops Grid -->
+            <div id="barbershopsGrid" class="barbershops-grid">
+                <!-- Barbershops will be loaded here by JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="loadMoreBtn" onclick="loadMoreBarbershops()" class="load-more-btn">
+                    Muat Lebih Banyak
+                </button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>Mengapa Pilih Man Barber?</h3>
+            <p style="margin: 15px 0; color: #7f8c8d;">
+                Dengan pengalaman bertahun-tahun dalam industri rambut, saya pakar dalam memberikan 
+                gaya rambut yang sesuai dengan personaliti anda. Khusus untuk artis dan personaliti, 
+                saya boleh membantu anda mencapai imej yang sempurna untuk persembahan dan media.
+            </p>
+            
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+            
+            <p style="margin-top: 20px; color: #7f8c8d; font-size: 0.9em;">
+                © 2024 Man Barber. Professional hair styling for everyone.
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
